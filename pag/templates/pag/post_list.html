@@ -8,24 +8,31 @@
 		<h1><a href="">Chris Django Blog</a></h1>
 	</div>
 
+{% for post in posts %}
 	<div>
-		
+		<p>Publicado {{ post.fecha_publicado }}</p>
+
+		<h1><a href=""> {{ post.titulo}} </a></h1>
+
+		<p> {{ post.texto|linebreaksbr }} </p>
+		<!--
 		<h2><a href="">Mi Primer Post</a></h2>
 		<p>	<h3><center><strong>Ing. Telematica</strong></center></h3>
 			Es la rama de la ingeniería que hace uso de las telecomunicaciones y la informática para desarrollar sistemas integrados que permitan la obtención, distribución y procesamiento de la información de manera eficiente.
 		</p>
 		<p>publicado: 02.04.2018, 12:14 </p>		
-
+		-->
 	</div>
-
+{% endfor %}
 	<div>
 		
+		<!--
 		<h2><a href="">Mi Segundo Post</a></h2>
 		<p>	<h3>Visión</h3>
 			El programa académico de Ingeniería Telemática de la UPIITA se encuentra comprometido con la formación integral, ética, proactiva, autónoma y de alta calidad de ingenieros en telemática actualizados y de pensamiento crítico-analítico, que participen activamente en la sociedad para generar, promover y difundir haceres y saberes, logrando con ello contribuir a la transformación positiva y desarrollo sustentable del país.
 		</p>		
 		<p>publicado: 03.04.2018, 15:14 </p>
-
+		-->
 	</div>
 
 
