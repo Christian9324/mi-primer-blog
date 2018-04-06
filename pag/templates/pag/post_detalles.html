@@ -8,10 +8,11 @@
         <p>{{ post.texto|linebreaksbr }}</p>
         {% if post.fecha_publicado %}
             <div class="date">
-                {{ post.fecha_publicado }}
+                {{ post.fecha_publicado }} 
+                <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><i class="fas fa-info-circle"></i></a>
             </div>
         {% endif %}
-
+        <p><br><br></p>
         <h6> Estoy Aqui! <br> El sitio Funciona</h6>
 
     </div>

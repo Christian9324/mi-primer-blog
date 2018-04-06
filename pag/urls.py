@@ -19,5 +19,7 @@ from . import views
 urlpatterns = [
         url(r'^$', views.post_list),
         url(r'^post/(?P<pk>[0-9]+)/$', views.post_detalles, name='post_detalles'),
+        url(r'^post/nuevo/$', views.nuevo_post, name='nuevo_post'),
+        url(r'^post/(?P<pk>[0-9]+)/editar/$', views.post_edit, name='post_edit'),
     ]
 
